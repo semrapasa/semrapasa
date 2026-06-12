@@ -1,20 +1,13 @@
 name: Generate T-Rex Runner Animation
 
 on:
-  # Her kod yüklediğinde veya dosya değiştirdiğinde de tetiklenir
   push:
     branches:
       - main
       - master
-  
-  # Her gece gece yarısı otomatik çalışır
   schedule:
     - cron: "0 0 * * *"
-    
-  # İstediğinde elle tetiklemek istersen
   workflow_dispatch:
-
-# ... kodun geri kalanı aynen kalacak ...
 
 jobs:
   github-metrics:
@@ -24,17 +17,32 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # 2. Adımda tanımladığımız gizli şifre
           token: ${{ secrets.METRICS_TOKEN }}
-          
-          # Çıktı ayarları
           filename: github-dino-t-rex.svg
           base: ""
           
-          # T-Rex / Dino eklentisi aktif ediliyor
-          plugin_anilist: no
-          plugin_introduction: no
-          
-          # Haftalık aktiviteni kaktüslere dönüştürür
+          # Takvimi ve T-Rex animasyon modunu zorla aktif ediyoruz
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
+          
+          # İŞTE SİHİRLİ DOKUNUŞ: SVG'nin içine T-Rex karakterini ve oyun tasarımını enjekte ediyoruz
+          config_order: plugin_isocalendar
+          custom_css: |
+            .isocalendar-box {
+              position: relative;
+            }
+            /* Takvimin önüne emektar dinomuzu yerleştiriyoruz */
+            .isocalendar-box::before {
+              content: "🦖";
+              position: absolute;
+              bottom: 15px;
+              left: 20px;
+              font-size: 28px;
+              animation: dinoJump 2.5s infinite steps(2);
+              z-index: 10;
+            }
+            /* Dinonun kaktüslerin (yeşil kutuların) üzerinden atlama animasyonu */
+            @keyframes dinoJump {
+              0%, 100% { transform: translateY(0); }
+              50% { transform: translateY(-35px); }
+            }
