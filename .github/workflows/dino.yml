@@ -1,0 +1,31 @@
+name: Generate T-Rex Runner Animation
+
+on:
+  # Her gece gece yarısı otomatik çalışır
+  schedule:
+    - cron: "0 0 * * *"
+  # İstediğinde elle tetiklemek istersen
+  workflow_dispatch:
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # 2. Adımda tanımladığımız gizli şifre
+          token: ${{ secrets.METRICS_TOKEN }}
+          
+          # Çıktı ayarları
+          filename: github-dino-t-rex.svg
+          base: ""
+          
+          # T-Rex / Dino eklentisi aktif ediliyor
+          plugin_anilist: no
+          plugin_introduction: no
+          
+          # Haftalık aktiviteni kaktüslere dönüştürür
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
