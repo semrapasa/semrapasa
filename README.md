@@ -21,3 +21,6 @@
 ###
 
 ###
+<p align="center">
+  <img src="https://raw.githubusercontent.com/semrapasa/semrapasa/main/github-dino-t-rex.svg" alt="GitHub T-Rex Runner" />
+</p>
