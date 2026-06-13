@@ -1,6 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on ML algorithms
-
+👩🏻‍💻 I am a third-year Computer Engineering student specializing in machine learning development, backend monitoring, and proactive analysis architectures. With a strong foundation in FastAPI, psutil, and Scikit-learn, I am passionate about building scalable solutions and implementing algorithms from scratch.
 
 ## 🌐 Socials:
 [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:semra.a.pasa@gmail.com) 
