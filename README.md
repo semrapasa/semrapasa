@@ -1,7 +1,17 @@
-# 💫 About Me:
-👩🏻‍💻 I am a third-year Computer Engineering student specializing in machine learning development, backend monitoring, and proactive analysis architectures. With a strong foundation in FastAPI, psutil, and Scikit-learn, I am passionate about building scalable solutions and implementing algorithms from scratch.
+### 👨‍💻 About Me
 
-## 🌐 Socials:
+I am a third-year Computer Engineering student specializing in machine learning and proactive backend operations. I enjoy building custom ML algorithms, hybrid AI architectures (LLM integrations), and real-time AIOps monitoring systems using tools like FastAPI and `psutil`. 
+
+
+#### 🎯 Focus Areas:
+
+*   🧠 **AI/ML:** Custom algorithms & Hybrid AI (LLM) integration.
+*   ⚙️ **AIOps & Backend:** Proactive system monitoring & scalable APIs (FastAPI).
+*   🔌 **Systems/Hardware:** C/C++ simulations & Arduino engineering.
+*   🔄 **Best Practices:** Strong command of Git/GitHub version control.
+
+   
+  ##   🌐 Socials:
 [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:semra.a.pasa@gmail.com) 
 
 # 💻 Tech Stack:
