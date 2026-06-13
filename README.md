@@ -10,6 +10,10 @@ I am a third-year Computer Engineering student specializing in machine learning 
 *   🔌 **Systems/Hardware:** C/C++ simulations & Arduino engineering.
 *   🔄 **Best Practices:** Strong command of Git/GitHub version control.
 
+#### 🔜 Next projects:
+*   🖥️ Telegram alert system for my <a href="https://github.com/semrapasa/intellimon"> <b>intellimon</b> </a> project
+*   🧞‍♂️ Cleaning, clustering, and making different predictions from synthetic data that I've collected for hours from my own computer.
+ 
    
   ##   🌐 Socials:
 [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:semra.a.pasa@gmail.com) 
